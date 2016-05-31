@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Дизайн-студия Nërds | Каталог</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container"> <!--центровщик-->
+      <nav class="main-navigation">
+       <a class="main-logo" href="index.html">
+          <img src="img/main-logo.png" alt="Дизайн-студия Nërds" width="140" height="55">
+        </a>
+        <ul>
+          <li>
+            <a href="#">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиеты</a>
+          </li>
+          <li class="active">
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="cart-block">
+        <a href="#" class="cart">Корзина</a>
+      </div>
+      <div class="big-heading">
+        <h2>Добро пожаловать в&nbsp;магазин готовых макетов</h2>
+      </div>
+    </div>
+  </header>
+  
+  <main class="container">
+    <div class="inner-columns">
+      <div class="inner-column-left">
+        <form class="catalog-filters" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="price-filter">
+            <legend>Стоимость:</legend>
+            <input type="range" min="0" max="20000"><br>
+            <span>от</span>
+            <input type="text" placeholder="0">
+            <span>до</span>
+            <input type="text" placeholder="20000">
+          </fieldset>
+          <fieldset class="grid-filter">
+            <legend>Сетка:</legend>
+            <label>
+              <input type="radio" name="catalog-grid" id="catalog-responsive" checked>
+              Адаптивная
+            </label><br>
+            <label>
+              <input type="radio" name="catalog-grid" id="catalog-fixed">
+              Фиксированная
+            </label><br>
+            <label>
+              <input type="radio" name="catalog-grid" id="catalog-rubberized">
+              Резиновая
+            </label>
+          </fieldset>
+          <fieldset class="features-filter">
+            <legend>Группы товаров:</legend>
+            <label>
+              <input type="checkbox" name="catalog-features" id="catalog-feature-slider" checked>
+              Слайдер
+            </label><br>
+            <label>
+              <input type="checkbox" name="catalog-features" id="catalog-feature-block">
+              Блок преимуществ
+            </label><br>
+            <label>
+              <input type="checkbox" name="catalog-features" id="catalog-feature-news" checked>
+              Новости
+            </label><br>
+            <label>
+              <input type="checkbox" name="catalog-features" id="catalog-feature-gallery">
+              Галерея
+            </label><br>
+            <label>
+              <input type="checkbox" name="catalog-features" id="catalog-feature-cart">
+              Корзина
+            </label>
+          </fieldset>
+          <button type="submit" name="catalog-filter-accept">Показать</button>
+        </form>
+      </div>
+      <div class="inner-column-right">
+        <div class="catalog-controls">
+          <div class="catalog-sort">
+            <ul>
+              <li>Сортировать</li>
+              <li>
+                <a href="#price">По цене</a>
+              </li>
+              <li>
+                <a href="#type">По типу</a>
+              </li>
+              <li>
+                <a href="#functionality">По функционалу</a>
+              </li>
+            </ul>
+          </div>
+          <div class="catalog-order">
+            <a href="#up">По возрастанию</a>
+            <a href="#down">По убыванию</a>
+          </div>
+        </div>
+        <div class="catalog">
+          <article>
+            <div class="catalog-item-plate">
+              <div class="catalog-item-title">
+                <h1 class="catalog-item-name">Aviator</h1>
+                <h2 class="catalog-item-descr">Одностраничный макет с&nbsp;авторским дизайном</h2>
+              </div>
+              <div class="item-buy">
+                <a href="#" class="item-buy-btn">8000 Р.</a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="catalog-item-plate">
+              <div class="catalog-item-title">
+                <h1 class="catalog-item-name">Sunset</h1>
+                <h2 class="catalog-item-descr">Интернет-магазин с&nbsp;личным кабинетом</h2>
+              </div>
+              <div class="item-buy">
+                <a href="#" class="item-buy-btn">10000 Р.</a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="catalog-item-plate">
+              <div class="catalog-item-title">
+                <h1 class="catalog-item-name">Forte</h1>
+                <h2 class="catalog-item-descr">Отличный макет для личного блога</h2>
+              </div>
+              <div class="item-buy">
+                <a href="#" class="item-buy-btn">5000 Р.</a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="catalog-item-plate">
+              <div class="catalog-item-title">
+                <h1 class="catalog-item-name">Modern Organic Thai</h1>
+                <h2 class="catalog-item-descr">Cайт для ресторана быстрого питания</h2>
+              </div>
+              <div class="item-buy">
+                <a href="#" class="item-buy-btn">12000 Р.</a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="catalog-item-plate">
+              <div class="catalog-item-title">
+                <h1 class="catalog-item-name">Avenue</h1>
+                <h2 class="catalog-item-descr">Макет для блога о&nbsp;путешествиях</h2>
+              </div>
+              <div class="item-buy">
+                <a href="#" class="item-buy-btn">8000 Р.</a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="catalog-item-plate">
+              <div class="catalog-item-title">
+                <h1 class="catalog-item-name">Dovetail</h1>
+                <h2 class="catalog-item-descr">Интернет-магазин с&nbsp;галереей товаров</h2>
+              </div>
+              <div class="item-buy">
+                <a href="#" class="item-buy-btn">14000 Р.</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="paginator">
+          <a class="active" href="#1">1</a>
+          <a href="#2">2</a>
+          <a href="#3">3</a>
+          <a class="next" href="#next">Следующая</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="main-footer">
+    <div class="container"> <!--центровщик-->
+      <section class="footer-social">
+        <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+        <a href="#" class="social-btn social-btn-fb">Facebook</a>
+        <a href="#" class="social-btn social-btn-inst">Instagram</a>
+      </section>
+      <section class="footer-offer">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из&nbsp;социальных сетей.</p>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
